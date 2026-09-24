@@ -2,4 +2,10 @@
 
 n1= int (input("digite o primeiro numero: "))
 n2= int (input("digite o segundo numero: "))
+i=0
+result = 1
+while (i<n2):
+    result= result*n1
+    i = i+1
 
+print (result)
