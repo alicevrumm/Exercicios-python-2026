@@ -5,7 +5,7 @@ if num <= 1:
     primo = False
 else:
     for i in range(2, num):
-        if num % 1 == 0:
+        if num % i == 0:
             primo = False
 
 if primo:
