@@ -3,11 +3,11 @@ numeros_dezenas=["zero","dez","vinte", "trinta", "quarenta", "cinquenta", "sesse
 n = int (input("digite o numero: "))
 
 numero_extenso=""
-
-if(n/10 >0):
+if (n>=0 and n<=19):
+    numero_extenso=numeros1_19[n]
+elif(n/10 >0):
     pos = int(n/10)
     numero_extenso=numeros_dezenas[pos]
-
     if (n%10 > 0):
         pos = int(n%10)
         numero_extenso = numero_extenso + " e " + numeros1_19 [pos]
